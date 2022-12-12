@@ -1,3 +1,16 @@
+body {
+    background: linear-gradient(to right, #a3d3e8, #a3e4d7, #b3e8ca);
+    
+  }
+
+div.top-bar {
+    width: 100%;
+    height: 100px;
+    background-image: url("images/mountain_range.jpg");
+    background-size: cover;
+    border-radius: 5px;
+}
+
 h1,h2,h3,h4,h5,h6 {
     text-align: center;
 }
@@ -16,5 +29,10 @@ body {
 }
 
 ul {
-    margin: auto;
-  }
+    list-style-position: inside;
+}
+
+li {
+    text-align: center;
+}
+
