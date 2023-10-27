@@ -1,23 +1,6 @@
 <!doctype html>
 <html lang="en" class="h-100">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="de Gaston Apps">
-    <meta name="author" content="Jonathan de Gaston">
-    <title>de Gaston Apps</title>
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-
-    <!-- Favicon -->
-    <link rel="icon" href="/assets/images/icon.png" type="image/png">
-
-    <!-- Custom styles for this template -->
-    <link href="/style.css" rel="stylesheet">
-</head>
 
 <body class="d-flex h-100 text-center text-white bg-dark">
 
@@ -44,6 +27,17 @@
 
 
 
+    <!-- Fetch the Header -->
+    <script>
+        fetch("/html/head.html")
+            .then((response) => response.text())
+            .then((html) => {
+                const parser = new DOMParser();
+                const headContent = parser.parseFromString(html, "text/html").head;
+                document.head.appendChild(headContent);
+            })
+            .catch((error) => console.error("Error loading head.html:", error));
+    </script>
 </body>
 
 </html>
