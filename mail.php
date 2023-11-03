@@ -1,5 +1,6 @@
 <!--             Copied from Bootstrap example             -->
 <!-- https://mdbootstrap.com/docs/b4/jquery/forms/contact/ -->
+<!--             See /html/pages/contact.html              -->
 
 <?php
   if(isset( $_POST['name']))
