@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Redirect to App Stores</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // Check if the user agent indicates Android
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        if (/android/i.test(userAgent)) {
+            // User is on an Android device, redirect to the Google Play Store link
+            window.location.href = 'https://play.google.com/store/apps/dev?id=8230997084127446105';
+        }
+        else if (/iPad|iPhone|iPod/i.test(userAgent)) {
+            // User is on an iOS device, redirect to the App Store link
+            window.location.href = 'https://apps.apple.com/us/developer/jonathan-de-gaston/id1656029142';
+        }
+        else {
+            // User is on neither Android nor iOS, redirect to another page
+            window.location.href = '/html/pages/apps.html';
+        }
+    </script>
+</body>
+
+</html>
