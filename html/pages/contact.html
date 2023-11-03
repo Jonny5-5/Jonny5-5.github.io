@@ -29,7 +29,7 @@
             <div>
                 <h3 class="float-md-start mb-0">Cover</h3>
                 <nav class="nav nav-masthead justify-content-center float-md-end">
-                    <a class="nav-link active" href="/index.html">Home</a>
+                    <a class="nav-link" href="/html/pages/home.html">Home</a>
                     <a class="nav-link" href="/html/pages/apps.html">Apps</a>
                     <a class="nav-link active" aria-current="page" href="/html/pages/contact.html">Contact</a>
                 </nav>
@@ -37,11 +37,92 @@
         </header>
 
         <main class="px-3">
-            <h1 class="underlined-h3">de Gaston Apps</h1>
+            <!--Section: Contact v.2-->
+            <div class="text-center">
+                <section class="mb-4">
+
+                    <!--Section heading-->
+                    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact me</h2>
+                    <!--Section description-->
+                    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate
+                        to
+                        contact me directly.</p>
+
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <form id="contact-form" name="contact-form" action="/mail.php" method="POST">
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="name" name="name" class="form-control">
+                                        <label for="name" class="">Your name</label>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="email" name="email" class="form-control">
+                                        <label for="email" class="">Your email</label>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row mt-3">
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="subject" name="subject" class="form-control">
+                                        <label for="subject" class="">Subject</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row mt-3">
+
+                                <!--Grid column-->
+                                <div class="col-md-12">
+
+                                    <div class="md-form">
+                                        <textarea type="text" id="message" name="message" rows="4"
+                                            class="form-control md-textarea"></textarea>
+                                        <label for="message">Your message</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                        </form>
+
+                        <div class="text-center text-md-right">
+                            <a class="btn btn-primary"
+                                onclick="document.getElementById('contact-form').submit();">Send</a>
+                        </div>
+                        <div class="status"></div>
+                        <!--Grid column-->
+
+                    </div>
+
+                </section>
+            </div>
+            <!--Section: Contact v.2-->
         </main>
 
         <footer class="mt-auto text-white-50">
             <p>Cover page for de Gaston Apps, LLC. by Jonathan de Gaston.</p>
+            <p>Contact me at developerjon5@gmail.com</p>
         </footer>
     </div>
 
