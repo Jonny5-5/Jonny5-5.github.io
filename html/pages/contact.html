@@ -23,6 +23,38 @@
 
 
 <body class="d-flex h-100 text-center text-white bg-dark">
+    <!-- Script for validating the  -->
+    <script type="text/javascript">
+        function validateAndSubmit() {
+            var nameField = document.getElementById('name');
+            var emailField = document.getElementById('email');
+            var subjectField = document.getElementById('subject');
+            var messageField = document.getElementById('message');
+
+            if (nameField.value.trim() === '' || emailField.value.trim() === '' || subjectField.value.trim() === '' || messageField.value.trim() === '') {
+                // At least one field is empty, show red flash
+                nameField.style.borderColor = 'red';
+                emailField.style.borderColor = 'red';
+                subjectField.style.borderColor = 'red';
+                messageField.style.borderColor = 'red';
+
+                // Refocus on the first empty field
+                if (nameField.value.trim() === '') {
+                    nameField.focus();
+                } else if (emailField.value.trim() === '') {
+                    emailField.focus();
+                } else if (subjectField.value.trim() === '') {
+                    subjectField.focus();
+                } else {
+                    messageField.focus();
+                }
+            } else {
+                // All fields are filled, submit the form
+                document.getElementById('contact-form').submit();
+            }
+        }
+    </script>
+
 
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <header class="mb-auto">
@@ -49,9 +81,9 @@
                         contact me directly.</p>
 
                     <div class="row">
-
                         <!--Grid column-->
-                        <form id="contact-form" name="contact-form" action="/mail.php" method="POST">
+                        <form id="contact-form" action="https://formspree.io/f/xrgwdqwj" method="POST">
+
 
                             <!--Grid row-->
                             <div class="row">
@@ -59,8 +91,8 @@
                                 <!--Grid column-->
                                 <div class="col-md-6">
                                     <div class="md-form mb-0">
-                                        <input type="text" id="name" name="name" class="form-control">
-                                        <label for="name" class="">Your name</label>
+                                        <input type="text" id="name" name="name" class="form-control"
+                                            placeholder="Your Name">
                                     </div>
                                 </div>
                                 <!--Grid column-->
@@ -68,8 +100,8 @@
                                 <!--Grid column-->
                                 <div class="col-md-6">
                                     <div class="md-form mb-0">
-                                        <input type="text" id="email" name="email" class="form-control">
-                                        <label for="email" class="">Your email</label>
+                                        <input type="text" id="email" name="email" class="form-control"
+                                            placeholder="Your email">
                                     </div>
                                 </div>
                                 <!--Grid column-->
@@ -81,8 +113,8 @@
                             <div class="row mt-3">
                                 <div class="col-md-12">
                                     <div class="md-form mb-0">
-                                        <input type="text" id="subject" name="subject" class="form-control">
-                                        <label for="subject" class="">Subject</label>
+                                        <input type="text" id="subject" name="subject" class="form-control"
+                                            placeholder="Subject">
                                     </div>
                                 </div>
                             </div>
@@ -107,8 +139,7 @@
                         </form>
 
                         <div class="text-center text-md-right">
-                            <a class="btn btn-primary"
-                                onclick="document.getElementById('contact-form').submit();">Send</a>
+                            <a class="btn btn-primary" onclick="validateAndSubmit();">Send</a>
                         </div>
                         <div class="status"></div>
                         <!--Grid column-->
