@@ -1,0 +1,9 @@
+Things I want to put on the website:
+A really big click here to see apps button
+Another nav-link to a dashboard
+
+Dashboard:
+App downloads dashboard
+Art?
+Recent commits to github
+Recent updates to apps
