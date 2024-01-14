@@ -7,6 +7,13 @@ document.addEventListener("DOMContentLoaded", function () {
             // Highlight the active tab
             highlightActiveTab();
         });
+
+    // Fetch and insert the common footer
+    fetch("/html/footer.html")
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("footer-container").innerHTML = html;
+        });
 });
 
 function highlightActiveTab() {
