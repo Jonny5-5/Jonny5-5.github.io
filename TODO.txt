@@ -1,7 +1,6 @@
 Things I want to put on the website:
 A really big click here to see apps button
 Another nav-link to a dashboard
-A picture of me on the contact picture
 Make pictures smaller on apps page in mobile view
 
 Dashboard:
