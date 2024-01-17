@@ -160,3 +160,10 @@ body {
     margin-top: 7rem;
   }
 }
+
+.circular-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
