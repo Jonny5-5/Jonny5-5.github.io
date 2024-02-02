@@ -1,6 +1,5 @@
 Things I want to put on the website:
-A really big click here to see apps button
-Another nav-link to a dashboard
+My Resume
 
 
 Dashboard:

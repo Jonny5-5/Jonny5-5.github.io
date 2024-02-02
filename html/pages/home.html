@@ -33,6 +33,8 @@
             <h1>Hey, I'm Jonathan!</h1>
             <img src="/assets/images/me.jpg" alt="me" class="circular-image mt-5">
             <h3 class="mt-5">I make Android/iOS apps</h3>
+
+            <button id="see_apps_btn" type="button" class="btn btn-primary mt-5">See my apps</button>
         </main>
 
         <div id="footer-container" class="mt-5"></div>
@@ -40,3 +42,11 @@
 </body>
 
 </html>
+
+
+<script>
+    // Make the button take user to the apps page
+    document.getElementById('see_apps_btn').addEventListener('click', function () {
+        window.location.href = './apps.html';
+    });
+</script>
