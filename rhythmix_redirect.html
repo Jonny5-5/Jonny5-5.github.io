@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<!-- TODO: Put stuff here to make the site name look not sketchy when you scan the qr code -->
+
+<head>
+    <title>Rhythmix Download</title>
+    <meta name="description" content="Download Rhythmix to create awesome playlists!">
+    <meta property="og:image" content="/assets/images/playlist_maker/feature_graphic_light.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/images/rhythmix_icon.png" type="image/png">
+</head>
+
+<body>
+    <script type="text/javascript">
+        // Check if the user agent indicates Android
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        if (/android/i.test(userAgent)) {
+            // User is on an Android device, redirect to the Google Play Store link
+            window.location.href = 'https://play.google.com/store/apps/details?id=com.degastonapps.playlist_maker_rhythmix';
+        }
+        else if (/iPad|iPhone|iPod/i.test(userAgent)) {
+            // User is on an iOS device, redirect to the App Store link
+            window.location.href = 'https://apps.apple.com/us/developer/jonathan-de-gaston/id1656029142';
+        }
+        else {
+            // User is on neither Android nor iOS, redirect to another page
+            window.location.href = '/html/pages/apps.html';
+        }
+    </script>
+</body>
+
+</html>
