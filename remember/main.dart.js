@@ -63658,8 +63658,8 @@ s=A.b([q,n,A.abc(!1,A.W(new A.a6(p,new A.a5h(),o),!0,o.h("av.E")),s)],t.Bz)
 q=new A.c7(s,t.ZD).gN(0)
 if(!q)A.al(A.d5("If using DragAndDropListExpansion, you must provide a non-null listGhost"))
 return A.abV(r,A.nj(new A.rm(s,this.ga5g(),new A.a5i(),null),null,null))},
-a5h(a,b,c,d){var s=this.d,r=s[d][c].e,q=s[b],p=q[a]
-if(r!==p.e)q[a]=p.IV(r)
+a5h(a,b,c,d){var s=this.d,r=s[d],q=c===r.length,p=r[q?c-1:c],o=s[b],n=o[a]
+if(p.e!==n.e)o[a]=n.IV(r[q?c-1:c].e)
 B.b.kC(s[d],c,B.b.iE(s[b],a))
 this.a6(new A.a5k())}}
 A.a5j.prototype={
