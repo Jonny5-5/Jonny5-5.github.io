@@ -167,3 +167,13 @@ body {
   height: auto;
   border-radius: 50%;
 }
+
+/* Custom styles for striped table with white text on dark background */
+.bg-dark .table-striped > tbody > tr:nth-of-type(odd) > * {
+  --bs-table-accent-bg: var(--bs-table-striped-bg);
+  color: var(--bs-white);
+}
+
+.bg-dark .table-striped > tbody > tr:nth-of-type(even) > * {
+  color: var(--bs-white);
+}
