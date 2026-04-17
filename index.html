@@ -1,10 +1,94 @@
 <!doctype html>
-<html lang="en" class="h-100">
-
-<!-- Move to the home page -->
-
+<html lang="en">
 <head>
-  <meta http-equiv="refresh" content="0;url=html/pages/home.html">
-</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Portfolio, Software Engineer, Apps, Android, iOS">
+    <meta name="author" content="Jonathan de Gaston">
+    <title>Jonathan de Gaston | Software Engineer</title>
+    <meta name="description" content="Portfolio of Jonathan de Gaston, showcasing software engineering projects and mobile applications.">
 
+    <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+    <link href="/style.css" rel="stylesheet">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+
+    <!-- Dynamic Navbar -->
+    <div id="navbar-container"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            
+            <div class="hero-content px-4">
+                <img src="/assets/images/me.jpg" alt="Jonathan de Gaston" class="circular-image animate-fade-in">
+                
+                <h1 class="animate-fade-in delay-100">
+                    Hi, I'm <span class="text-gradient">Jonathan</span>
+                </h1>
+                
+                <h3 class="animate-fade-in delay-200 mt-3" style="color: var(--text-secondary); font-weight: 400;">
+                    Software Engineer building elegant solutions and impactful mobile applications.
+                </h3>
+                
+                <div class="hero-actions animate-fade-in delay-300">
+                    <a href="/projects.html" class="btn btn-primary">
+                        View Projects
+                    </a>
+                    <a href="/contact.html" class="btn btn-secondary">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Highlight -->
+        <section class="container mt-5 mb-5 animate-fade-in">
+            <h2 class="text-center mb-5">Featured <span class="text-gradient">Work</span></h2>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="glass-panel project-card">
+                    <div class="project-icon">
+                        <img src="/assets/images/playlist_maker/lute.png" alt="Rhythmix Icon">
+                    </div>
+                    <h3 class="project-title">Rhythmix</h3>
+                    <p class="project-desc">An intelligent app leveraging the Spotify API to generate personalized playlists based on advanced audio features like energy, popularity, and danceability.</p>
+                    <div class="project-tags">
+                        <span class="tag">Spotify API</span>
+                        <span class="tag">iOS</span>
+                        <span class="tag">Android</span>
+                    </div>
+                    <a href="/projects.html#rhythmix" class="project-link">Learn more &rarr;</a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="glass-panel project-card">
+                    <div class="project-icon">
+                        <img src="/assets/images/tuners/uke_icon.png" alt="Tuner Icon">
+                    </div>
+                    <h3 class="project-title">Precision Tuners</h3>
+                    <p class="project-desc">A suite of highly accurate instrument tuners for iOS and Android, achieving over 1 million total downloads worldwide.</p>
+                    <div class="project-tags">
+                        <span class="tag">Audio Processing</span>
+                        <span class="tag">Algorithms</span>
+                        <span class="tag">1M+ Downloads</span>
+                    </div>
+                    <a href="/projects.html#tuners" class="project-link">Learn more &rarr;</a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="/projects.html" class="btn btn-secondary">See all projects</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Dynamic Footer -->
+    <div id="footer-container"></div>
+
+</body>
 </html>

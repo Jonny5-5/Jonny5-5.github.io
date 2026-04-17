@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Portfolio, Software Engineer, Apps, Android, iOS">
+    <meta name="author" content="Jonathan de Gaston">
+    <title>Projects | Jonathan de Gaston</title>
+    <meta name="description" content="Software engineering projects and mobile applications by Jonathan de Gaston.">
+
+    <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+    <link href="/style.css" rel="stylesheet">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+
+    <div id="navbar-container"></div>
+
+    <main class="container">
+        <h1 class="text-center mt-5 mb-2 animate-fade-in delay-100">My <span class="text-gradient">Projects</span></h1>
+        <p class="text-center mb-4 animate-fade-in delay-200" style="max-width: 600px; margin-left: auto; margin-right: auto;">
+            A collection of my work spanning mobile app development, audio algorithms, and web integrations.
+        </p>
+
+        <div class="d-flex justify-content-center mb-5 animate-fade-in delay-200" style="display: flex; justify-content: center; gap: 1.5rem; align-items: center;">
+            <a href="https://play.google.com/store/apps/dev?id=8230997084127446105" target="_blank" style="transition: transform 0.2s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" style="height: 45px; width: auto;">
+            </a>
+            <a href="https://apps.apple.com/us/developer/jonathan-de-gaston/id1656029142" target="_blank" style="transition: transform 0.2s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store" style="height: 45px; width: auto;">
+            </a>
+        </div>
+
+        <div class="projects-grid animate-fade-in delay-300">
+            <!-- Rhythmix -->
+            <div id="rhythmix" class="glass-panel project-card">
+                <div class="project-icon">
+                    <img src="/assets/images/playlist_maker/lute.png" alt="Rhythmix Icon">
+                </div>
+                <h3 class="project-title">Rhythmix</h3>
+                <p class="project-desc">Connects to the Spotify API to generate perfect playlists exactly how you want them! Analyze and create better playlists based on features like energy, popularity, and danceability.</p>
+                <div class="project-tags">
+                    <span class="tag">Spotify API</span>
+                    <span class="tag">iOS</span>
+                    <span class="tag">Android</span>
+                </div>
+                <div class="mt-3">
+                    <a href="https://github.com/Jonny5-5" target="_blank" class="project-link">
+                        View Code on GitHub &nearr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Tuners -->
+            <div id="tuners" class="glass-panel project-card">
+                <div class="project-icon">
+                    <img src="/assets/images/tuners/uke_icon.png" alt="Tuner Icon">
+                </div>
+                <h3 class="project-title">Precision Tuners</h3>
+                <p class="project-desc">I've refined this project since 2019, from fine-tuning the pitch detection algorithm to crafting a beautiful user interface. Available for Guitar, Ukulele, and Violin.</p>
+                <div class="project-tags">
+                    <span class="tag">Audio Algorithms</span>
+                    <span class="tag">Pitch Detection</span>
+                    <span class="tag">1M+ Downloads</span>
+                </div>
+                <div class="mt-3">
+                    <a href="https://github.com/Jonny5-5" target="_blank" class="project-link">
+                        View Code on GitHub &nearr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- BMI Calculator -->
+            <div id="bmi" class="glass-panel project-card">
+                <div class="project-icon">
+                    <img src="/assets/images/bmi_calculator/bmi_icon.png" alt="BMI Icon">
+                </div>
+                <h3 class="project-title">BMI Calculator</h3>
+                <p class="project-desc">My very first app released in 2017. A simple calculator using the WHO standard calculation for metric or imperial units. Taught me the end-to-end release process.</p>
+                <div class="project-tags">
+                    <span class="tag">Utility</span>
+                    <span class="tag">10k+ Downloads</span>
+                </div>
+                <div class="mt-3">
+                    <a href="https://github.com/Jonny5-5" target="_blank" class="project-link">
+                        View Code on GitHub &nearr;
+                    </a>
+                </div>
+            </div>
+            
+            <!-- GitHub Projects (Generic Placeholder for future data) -->
+            <div class="glass-panel project-card">
+                <div class="project-icon" style="font-size: 2rem;">
+                    &lt;/&gt;
+                </div>
+                <h3 class="project-title">Open Source</h3>
+                <p class="project-desc">Various open-source contributions and technical experiments available on my GitHub profile. Highlighting algorithms, scripts, and web integrations.</p>
+                <div class="project-tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">C++</span>
+                </div>
+                <div class="mt-3 d-flex" style="gap: 1rem;">
+                    <a href="https://github.com/Jonny5-5" target="_blank" class="project-link">
+                        View GitHub &nearr;
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="footer-container"></div>
+
+</body>
+</html>

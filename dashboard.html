@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Portfolio, Software Engineer, App Performance">
+    <meta name="author" content="Jonathan de Gaston">
+    <title>Dashboard | Jonathan de Gaston</title>
+    <meta name="description" content="App Performance Dashboard for de Gaston Apps.">
+
+    <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+    <link href="/style.css" rel="stylesheet">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+
+    <div id="navbar-container"></div>
+
+    <main class="container">
+        <div class="d-flex justify-content-between align-items-center mt-5 mb-4 animate-fade-in delay-100" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem;">
+            <h1 class="mb-0">App <span class="text-gradient">Performance</span></h1>
+            <p style="color: var(--accent-green); font-size: 0.9rem; margin-bottom: 0.5rem;">Last updated: May 22, 2025</p>
+        </div>
+
+        <div class="glass-panel p-4 animate-fade-in delay-200" style="padding: 2rem; overflow-x: auto;">
+            <table style="width: 100%; border-collapse: collapse; text-align: left; min-width: 600px;">
+                <thead>
+                    <tr style="border-bottom: 1px solid var(--glass-border);">
+                        <th style="padding: 1rem; color: var(--text-secondary); font-weight: 500;">App Name</th>
+                        <th style="padding: 1rem; color: var(--text-secondary); font-weight: 500;">Lifetime Downloads</th>
+                        <th style="padding: 1rem; color: var(--text-secondary); font-weight: 500;">Last 30 Days</th>
+                        <th style="padding: 1rem; color: var(--text-secondary); font-weight: 500;">Avg. Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom: 1px solid rgba(255,255,255,0.05); transition: background 0.3s ease;">
+                        <td style="padding: 1rem; font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="color: #fbbf24;">★</span> Guitar Tuner
+                        </td>
+                        <td style="padding: 1rem;">1,183,190+</td>
+                        <td style="padding: 1rem; color: var(--text-secondary);">-</td>
+                        <td style="padding: 1rem; color: var(--accent-green); font-weight: 600;">4.7</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid rgba(255,255,255,0.05); transition: background 0.3s ease;">
+                        <td style="padding: 1rem; font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="color: #fbbf24;">★</span> Ukulele Tuner
+                        </td>
+                        <td style="padding: 1rem;">272,400+</td>
+                        <td style="padding: 1rem; color: var(--accent-blue);">700+</td>
+                        <td style="padding: 1rem; color: var(--accent-green); font-weight: 600;">4.3</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid rgba(255,255,255,0.05); transition: background 0.3s ease;">
+                        <td style="padding: 1rem; font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="visibility: hidden;">★</span> Violin Tuner
+                        </td>
+                        <td style="padding: 1rem;">44,445</td>
+                        <td style="padding: 1rem; color: var(--accent-blue);">2,194</td>
+                        <td style="padding: 1rem; color: var(--accent-green); font-weight: 600;">4.4</td>
+                    </tr>
+                    <tr style="transition: background 0.3s ease;">
+                        <td style="padding: 1rem; font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="visibility: hidden;">★</span> Rhythmix
+                        </td>
+                        <td style="padding: 1rem;">396</td>
+                        <td style="padding: 1rem; color: var(--accent-blue);">79</td>
+                        <td style="padding: 1rem; color: var(--text-secondary);">---</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="stats-grid animate-fade-in delay-300">
+            <div class="glass-panel stat-card">
+                <div class="stat-value text-gradient">1.5M+</div>
+                <div class="stat-label">Total Downloads</div>
+            </div>
+            <div class="stat-card glass-panel">
+                <div class="stat-value" style="color: var(--text-primary);">4.6</div>
+                <div class="stat-label">Average Rating</div>
+            </div>
+            <div class="stat-card glass-panel">
+                <div class="stat-value" style="color: var(--accent-blue);">4</div>
+                <div class="stat-label">Active Apps</div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-container"></div>
+
+</body>
+</html>

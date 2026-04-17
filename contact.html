@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Portfolio, Contact, Software Engineer">
+    <meta name="author" content="Jonathan de Gaston">
+    <title>Contact | Jonathan de Gaston</title>
+    <meta name="description" content="Get in touch with Jonathan de Gaston.">
+
+    <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+    <link href="/style.css" rel="stylesheet">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+
+    <div id="navbar-container"></div>
+
+    <main class="container d-flex flex-column" style="align-items: center;">
+        
+        <div class="contact-container text-center animate-fade-in delay-100" style="margin-top: 4rem;">
+            <img src="/assets/images/me.jpg" alt="me" class="circular-image" style="width: 120px; height: 120px;">
+            
+            <h1 class="mb-2">Get in <span class="text-gradient">Touch</span></h1>
+            <p class="mb-5">Have any questions or opportunities? Send me a message below or check out my resume.</p>
+
+            <form id="contact-form" action="https://formspree.io/f/xrgwdqwj" method="POST" class="glass-panel" style="padding: 2.5rem; text-align: left;">
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                    <div class="form-group mb-0">
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group mb-0">
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
+                </div>
+
+                <div class="form-group">
+                    <textarea id="message" name="message" class="form-control" placeholder="Your Message" required></textarea>
+                </div>
+
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+
+            <div class="mt-5 mb-4">
+                <a class="btn btn-secondary" href="/assets/documents/resume.pdf" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    View Resume
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <div id="footer-container"></div>
+
+</body>
+</html>
